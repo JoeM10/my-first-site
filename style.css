@@ -5,24 +5,25 @@
 }
 
 html{
-  background: powderblue;
+  background: rgb(243, 241, 238);
 }
 
 body{
   display:flexbox;
   justify-items: center;
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /*----------NAVBAR SETUP----------*/
 .navbar{
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   background-color: rgb(14, 49, 85);
   width: stretch;
   padding: 10px;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
 }
 
 .logo{
@@ -52,18 +53,18 @@ body{
   justify-content: center;
   text-decoration-line: none;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  background-color: rgb(255, 255, 255);
+  font-size: 18px;
+  background-color: rgb(243, 241, 238);
   width: 100px;
   border-radius: 8px;
   padding: 4px;
   transition: color 0.2s, text-decoration-color 0.4s;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 1);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.8);
 }
 
-a:hover{
+.navbarItem:hover{
   color: rgb(255, 108, 23);
 }
 
@@ -72,4 +73,46 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: stretch;
+  background-color: rgb(205, 226, 234);
+}
+
+.header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  padding-top: 75px;
+  padding-bottom: 30px;
+  font-weight:800;
+}
+
+.greeting{
+  padding-bottom: 30px;
+}
+
+.PictureOfMe{
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+/*----------PROJECT CARDS SETUP----------*/
+.projectsContainer{
+  display: flex;
+}
+
+.projectsTitle{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 30px;
+  font-weight: 800;
 }
