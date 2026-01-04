@@ -10,7 +10,7 @@ html{
 
 body{
   display:flex;
-  justify-items: center;
+  justify-content: center;
   flex-direction: column;
   font-family: "Urbanist", sans-serif;
   font-style: normal;
@@ -48,6 +48,8 @@ body{
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+
 }
 
 .navbarItem{
@@ -179,4 +181,29 @@ footer p{
   width: 30px;
   height: 30px;
   border-radius: 100%;
+}
+
+/*----------MEDIA STYLES----------*/
+@media (max-width: 660px) {
+  .navbarItems{
+    justify-content: space-around;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 596px) {
+  .navbarItems{
+    justify-content: space-around;
+    gap: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbarItems{
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+  }
 }
