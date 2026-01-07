@@ -142,12 +142,13 @@ h1{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   height: clamp(320px, 40vw, 420px);
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .projectCard:hover{
