@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JM Landing Page</title>
+    <!-- Font Awesome Style Sheet -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
+    <!-- My Style Sheet -->
     <link rel="stylesheet" href="style.css" class="stylesheet" />
   </head>
 
@@ -12,13 +21,17 @@
     <nav class="navbar">
       <!-- Logo for Navigation Bar -->
       <b class="logo">JM</b>
+      <!-- Hamburger Menu -->
+      <i class="fas fa-bars menu-toggle" onclick="togglemenu()"></i>
+      <div id="menu" class="menu">
       <!-- Navigation Bar List -->
-      <ul class="navbarItems">
-        <li><a class="navbarItem" href="*">Home</a></li>
-        <li><a class="navbarItem" href="*">About Me</a></li>
-        <li><a class="navbarItem" href="*">Projects</a></li>
-        <li><a class="navbarItem" href="*">Contact</a></li>
-      </ul>
+        <ul class="navbarItems">
+          <li><a class="navbarItem" href="*">Home</a></li>
+          <li><a class="navbarItem" href="*">About Me</a></li>
+          <li><a class="navbarItem" href="*">Projects</a></li>
+          <li><a class="navbarItem" href="*">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     
@@ -61,5 +74,11 @@
       </a>
       <p>Privacy Policy | Terms of Use | Contact Info</p>
     </footer>
+    <script>
+      function togglemenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

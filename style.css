@@ -38,10 +38,31 @@ body{
   position: relative;
 }
 
+.menu-toggle{
+  display: none; /* Hidden by Default unless in Mobile View */
+  font-size: 31px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-right: 40px;
+  background-color: rgb(77, 77, 77);
+  border-top-right-radius: 10px; 
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .navbarItems{
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  justify-content: space-evenly;
   gap: 40px;
   background: 10px;
   background-color: rgb(77, 77, 77);
@@ -135,7 +156,6 @@ h1{
   gap: 20px;
   margin: 0;
   padding: 0 24px;
-  justify-items: stretch;
 }
 
 .projectCard{
@@ -193,25 +213,24 @@ footer p{
 
 /*----------MEDIA STYLES----------*/
 @media (max-width: 660px) {
-  .navbarItems{
-    justify-content: space-around;
-    gap: 20px;
-  }
-}
 
-@media (max-width: 596px) {
-  .navbarItems{
-    justify-content: space-around;
-    gap: 20px;
-    border-radius: 10px;
+  .menu-toggle{
+    display: block;
   }
-}
 
-@media (max-width: 480px) {
+  .menu{
+    display: none;
+  }
+
+  .menu.active{
+    display: flex;
+  }
+
   .navbarItems{
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
     border-radius: 10px;
+    margin-left: 10px;
   }
 }
